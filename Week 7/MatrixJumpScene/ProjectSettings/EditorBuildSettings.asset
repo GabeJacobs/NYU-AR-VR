@@ -6,9 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MatrixJumpSecne.unity
-    guid: 51dcd57095594d147bb555881c4a4839
-  - enabled: 1
     path: Assets/Scenes/StartScreen.unity
     guid: ef2d357d3f559db47ab35deefc493f56
+  - enabled: 1
+    path: Assets/Scenes/MatrixJumpSecne.unity
+    guid: 51dcd57095594d147bb555881c4a4839
   m_configObjects: {}
