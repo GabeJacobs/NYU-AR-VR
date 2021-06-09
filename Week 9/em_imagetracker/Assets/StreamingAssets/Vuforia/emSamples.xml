@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
-  <Tracking>
-    <ImageTarget name="harrypotter" size="1.000000 1.435601" />
-    <ImageTarget name="block-pattern" size="1.000000 0.657500" />
-    <ImageTarget name="woodchips" size="1.000000 0.700535" />
-    <CylinderTarget name="soda_can" sideLength="100.000000"/>
-  </Tracking>
-</QCARConfig>
