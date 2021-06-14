@@ -13,11 +13,13 @@ public class trackablesManager2 : MonoBehaviour {
     // Start is called before the first frame update
     void Start() {
         line = gameObject.AddComponent<LineRenderer>();
-        line.widthMultiplier = .01f;
+        line.widthMultiplier = .005f;
         line.positionCount = 2;
         line.material = new Material(Shader.Find("Mobile/Particles/Additive"));
-        line.startColor = Color.blue;
-        line.endColor = Color.red;
+        line.startColor = Color.green;
+        line.endColor = Color.green;
+        line.enabled = false;
+
     }
 
     // Update is called once per frame
@@ -52,15 +54,25 @@ public class trackablesManager2 : MonoBehaviour {
 
             if (astroTracked == true && moonTracked == true) {
                 RaycastHit hit;
-                Debug.DrawRay(astroPos, dir:(moonPos - astroPos), Color.green);
-                //
-                // if (Physics.Raycast(transform.position, tb.transform.right, out hit)) {
-                //         Debug.DrawRay(astroPos, tb.transform.right, Color.green, hit.distance);
-                // }
+                // Debug.DrawRay(astroPos, dir:(moonPos - astroPos), Color.green);
+                
+                if (Physics.Raycast(transform.position, (moonPos - astroPos), out hit)) {
+                        Debug.DrawRay(astroPos, (moonPos - astroPos), Color.green);
+                         line.enabled = true;
+                        var points = new Vector3[2];
+                        points[0] = astroPos;
+                        points[1] = moonPos;
+                        line.SetPositions(points);
+
+                } else { 
+                    line.enabled = false;
+                }
                 
 
                 spaceShip.transform.position += (moonPos - astroPos).normalized * (.1f * Time.deltaTime);
-            } else if (astroTracked) {
+            } 
+            
+            if (astroTracked == true && moonTracked == false ) {
                 Debug.DrawRay(astroPos, dir:tb.transform.right, Color.red);
             }
         }
