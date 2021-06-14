@@ -7,7 +7,7 @@
 
 <Assembly name="astronauts_assembly" assemblyId="807bd3c9779c443f8c651a449139336c">
 <Part name="astronaut" translation="0 0 0" rotation="AD: 0 0 1 0"/>
-<EntryPoint name="viewpoint_0001" translation="0.0280401 -0.0125397 0.184996" rotation="AD: 0.9999999999843483 -0.001173444808873969 0.004902696271473622 206.92" trained="no">
+<EntryPoint name="viewpoint_0002" translation="0.0776469 -0.0118114 0.194261" rotation="AD: 0.999999999882357 0.0018348485572377104 -0.008550466173255123 204.222" trained="no">
 
 </EntryPoint>
 
