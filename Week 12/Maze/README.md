@@ -18,3 +18,5 @@ This is my submission to Assignment 12.1: Create a Maze. The project is a C# Uni
 Using these packages helped create a seamless XR experience with the oculus quest. Progrid was especially useful in creating the maze since it quickly allined all of the floors and walls that were used in the level. Furthermore, Probuilder was helpful in creating the key object. Rather than having to find or pay for an external asset, probuilder allowed me to make the key very quickly.
 
   In order to make the scene more immersive, I also added a looping sound effect of [office noise](https://www.soundsnap.com/office_wardrop_lite_voices_activity_4). This brings the scene to life a little more, rather than it being silent throughout the experience.
+  
+  Here is a [video walkthrough](https://drive.google.com/file/d/1-2rizCVzm83JwTTY8G615JEkudONS1_L/view?usp=sharing) of the experience.
