@@ -20,3 +20,15 @@ Using these packages helped create a seamless XR experience with the oculus ques
   In order to make the scene more immersive, I also added a looping sound effect of [office noise](https://www.soundsnap.com/office_wardrop_lite_voices_activity_4). This brings the scene to life a little more, rather than it being silent throughout the experience.
   
   Here is a [video walkthrough](https://drive.google.com/file/d/1-2rizCVzm83JwTTY8G615JEkudONS1_L/view?usp=sharing) of the experience.
+  
+  ![](https://i.imgur.com/lTcWhlp.png)
+  ![](https://i.imgur.com/XH6ISQv.png)
+  ![](https://i.imgur.com/gYnMyzR.png)
+  ![](https://i.imgur.com/3lt4zlB.png)
+  ![](https://i.imgur.com/7cs5q0e.png)
+  ![](https://i.imgur.com/uewS7qh.png)
+  ![](https://i.imgur.com/iD9v62y.png)
+  ![](https://i.imgur.com/F003I4d.png)
+  ![](https://i.imgur.com/zwbphjc.png)
+  ![](https://i.imgur.com/qDAkdlU.png)
+
