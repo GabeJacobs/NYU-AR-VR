@@ -5,7 +5,7 @@ Gabe Jacobs
 
 This is my submission to Assignment 12.1: Create a Maze. The project is a C# Unity project that runs using Unity 2019.4.26f1 and an Oculus Quest 2.  
   
-  This is a prototype of a simple VR game that places the user into a maze within an office. The user can teleport around and use the joystick to rotate their view 45 degrees. Certain paths lead to dead ends, and other paths lead to interactable object such as a key. The user can teleport using the left controller's trigger, and pickup the key using the rigth controller's trigger. To open the door, the user must place the key into the handle of the door. Finally, walking into the green boxed area finishes the game.
+  This is a prototype of a simple VR game that places the user into a maze within an office. The user can teleport around and use the joystick to rotate their view 45 degrees. Certain paths lead to dead ends, and other paths lead to interactable object such as a key. The user can teleport using the left controller's trigger, and pickup the key using the right controller's trigger. To open the door, the user must place the key into the handle of the door. Finally, walking into the green boxed area finishes the game.
   
   This prototype uses a number of helpful packages:  
   - XR Plugin Management
