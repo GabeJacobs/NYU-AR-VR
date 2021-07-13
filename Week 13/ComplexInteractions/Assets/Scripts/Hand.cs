@@ -1,8 +1,10 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public enum HandType
 {
@@ -18,11 +20,35 @@ public class Hand : MonoBehaviour
     public InputAction trackedAction = null;
     private bool m_isCurrentlyTracked = false;
 
-    private List<SkinnedMeshRenderer> m_currentRenderers = new List<SkinnedMeshRenderer>();
+    private List<Renderer> m_currentRenderers = new List<Renderer>();
 
     private Collider[] m_colliders = null;
 
     public bool isCollisionEnabled { get; private set; } = false;
+
+    public XRBaseInteractor interactor = null;
+
+    private void Awake()
+    {
+        if (interactor == null)
+        {
+            interactor = GetComponentInParent<XRBaseInteractor>();
+        }
+    }
+
+    private void OnEnable()
+    {
+        interactor.onSelectEntered.AddListener(onGrab);
+        interactor.onSelectExited.AddListener(onRelease);
+    }
+
+    private void OnDisable()
+    {
+        interactor.onSelectEntered.RemoveListener(onGrab);
+        interactor.onSelectExited.RemoveListener(onRelease);
+    }
+    
+    
 
     void Start()
     {
@@ -49,7 +75,7 @@ public class Hand : MonoBehaviour
 
     public void Show()
     {
-        foreach (SkinnedMeshRenderer renderer in m_currentRenderers)
+        foreach (Renderer renderer in m_currentRenderers)
         {
             renderer.enabled = true;
             Debug.Log("Showing Hands");
@@ -64,8 +90,8 @@ public class Hand : MonoBehaviour
     public void Hide()
     {
         m_currentRenderers.Clear();
-        SkinnedMeshRenderer[] renderers = GetComponentsInChildren<SkinnedMeshRenderer>();
-        foreach (SkinnedMeshRenderer renderer in renderers)
+        Renderer[] renderers = GetComponentsInChildren<Renderer>();
+        foreach (Renderer renderer in renderers)
         {
             Debug.Log("Hiding Hands");
             renderer.enabled = false;
@@ -87,6 +113,29 @@ public class Hand : MonoBehaviour
         foreach(Collider collider in m_colliders)
         {
             collider.enabled = isCollisionEnabled;
+        }
+    }
+
+    void onGrab(XRBaseInteractable grabbedObject)
+    {
+        HandControl ctrl = grabbedObject.GetComponent<HandControl>();
+        if (ctrl != null)
+        {
+            if (ctrl.hideHand == true)
+            {
+                Hide();
+            }
+        }
+    }
+    void onRelease(XRBaseInteractable grabbedObject)
+    {
+        HandControl ctrl = grabbedObject.GetComponent<HandControl>();
+        if (ctrl != null)
+        {
+            if (ctrl.hideHand == true)
+            {
+                Show();
+            }
         }
     }
 }
