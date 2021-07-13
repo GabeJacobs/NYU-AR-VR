@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -18,11 +19,16 @@ public class Hand : MonoBehaviour
     private bool m_isCurrentlyTracked = false;
 
     private List<SkinnedMeshRenderer> m_currentRenderers = new List<SkinnedMeshRenderer>();
-    // Start is called before the first frame update
+
+    private Collider[] m_colliders = null;
+
+    public bool isCollisionEnabled { get; private set; } = false;
+
     void Start()
     {
         trackedAction.Enable();
         Hide();
+        m_colliders = GetComponentsInChildren<Collider>().Where(childCollider => !childCollider.isTrigger).ToArray();
     }
 
     // Update is called once per frame
@@ -50,6 +56,7 @@ public class Hand : MonoBehaviour
         }
 
         isHidden = false;
+        EnableCollisions(true);
 
     }
 
@@ -66,5 +73,20 @@ public class Hand : MonoBehaviour
         }
 
         isHidden = true;
+        EnableCollisions(false);
+
+    }
+
+    public void EnableCollisions(bool enable)
+    {
+        if (isCollisionEnabled == enable)
+        {
+            return;
+        }
+        isCollisionEnabled = enable;
+        foreach(Collider collider in m_colliders)
+        {
+            collider.enabled = isCollisionEnabled;
+        }
     }
 }
