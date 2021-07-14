@@ -102,7 +102,7 @@ public class Hand : MonoBehaviour
         foreach (Renderer renderer in m_currentRenderers)
         {
             renderer.enabled = true;
-            Debug.Log("Showing Hands");
+            // Debug.Log("Showing Hands");
         }
 
         isHidden = false;
@@ -117,7 +117,7 @@ public class Hand : MonoBehaviour
         Renderer[] renderers = GetComponentsInChildren<Renderer>();
         foreach (Renderer renderer in renderers)
         {
-            Debug.Log("Hiding Hands");
+            // Debug.Log("Hiding Hands");
             renderer.enabled = false;
             m_currentRenderers.Add(renderer);
         }
