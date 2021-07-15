@@ -109,7 +109,6 @@ public class PushButton : MonoBehaviour
 
             if (!wasPressed && isPressed())
             {
-                Debug.Log("is Pressed!");
                 onPressed?.Invoke();
                 wasPressed = true;
                 // we pressed the button
