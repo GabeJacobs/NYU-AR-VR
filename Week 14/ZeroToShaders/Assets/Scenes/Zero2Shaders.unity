@@ -311,7 +311,7 @@ GameObject:
   - component: {fileID: 313673764}
   - component: {fileID: 313673763}
   m_Layer: 0
-  m_Name: CustomShader1
+  m_Name: PowWithColors
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -635,7 +635,7 @@ GameObject:
   - component: {fileID: 579917886}
   - component: {fileID: 579917885}
   m_Layer: 0
-  m_Name: CustomShader3
+  m_Name: RimColor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1181,7 +1181,7 @@ GameObject:
   - component: {fileID: 1004777811}
   - component: {fileID: 1004777810}
   m_Layer: 0
-  m_Name: CustomShader2
+  m_Name: DotViewDir
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

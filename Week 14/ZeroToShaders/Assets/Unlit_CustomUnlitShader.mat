@@ -26,10 +26,10 @@ Material:
     m_Floats:
     - _LowerEdge: 0.331
     - _Position: 0.346
-    - _Position1: 0.056
-    - _Position2: 0.669
-    - _Position3: 0.352
-    - _Power: 4.26
+    - _Position1: 0.5
+    - _Position2: 0.5
+    - _Position3: 0.5
+    - _Power: 6.11
     - _UpperEdge: 0.992
     m_Colors: []
   m_BuildTextureStacks: []
