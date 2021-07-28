@@ -48,7 +48,7 @@ public class XRHighlightOnHover : MonoBehaviour
     void SwapOutMaterial(XRBaseInteractor interactor)
     {
         m_renderer.materials = m_currentMaterials;
-        m_currentMaterials = null;
+        // m_currentMaterials = null;
 
     }
 }
