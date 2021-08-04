@@ -216,6 +216,13 @@
       },
       "url": "https://packages.unity.com"
     },
+    "com.zigurous.importer.cc0textures": {
+      "version": "https://github.com/zigurous/unity-cc0textures-importer.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "bdd5a58d4dfc97a5a4bb500efb0aa218ee77158f"
+    },
     "com.unity.modules.ai": {
       "version": "1.0.0",
       "depth": 0,
