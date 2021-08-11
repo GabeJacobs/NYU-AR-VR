@@ -4,7 +4,19 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/XRPersistant.unity
+    guid: 51db84c6b0650e24283c830247fcf565
+  - enabled: 1
+    path: Assets/Scenes/Maze.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Quitting Time Lobby.unity
+    guid: 5be38c924cd173441928792fcce0310f
+  - enabled: 1
+    path: Assets/Scenes/3DSwitchboard.unity
+    guid: 29c374792aa433f4c985b4d8eec5f4ca
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 08652b988d244444c99957533e1ae84a,
       type: 2}
