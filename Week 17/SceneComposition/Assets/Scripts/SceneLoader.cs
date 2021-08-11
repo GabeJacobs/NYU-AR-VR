@@ -9,6 +9,7 @@ public class SceneLoader : Singleton<SceneLoader>
     public Material screenFade = null;
     public UnityEvent onLoadStart = new UnityEvent();
     public UnityEvent onLoadFinish = new UnityEvent();
+    public UnityEvent onBeforeUnload = new UnityEvent();
     
     [Min(0.001f)]
     public float fadeSpeed = 1.0f;
@@ -57,6 +58,8 @@ public class SceneLoader : Singleton<SceneLoader>
         m_isLoading = true;
         onLoadStart?.Invoke();;
         yield return FadeOut();
+        onBeforeUnload?.Invoke();
+        yield return new WaitForSeconds(0);
         yield return StartCoroutine(UnloadCurrentScene());
         yield return new WaitForSeconds(addedWaitTime);
         yield return StartCoroutine(LoadNewScene(name));
