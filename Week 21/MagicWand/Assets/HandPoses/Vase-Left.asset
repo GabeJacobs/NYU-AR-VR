@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 487fd41142fbdaa47a8af89b3b03f50a, type: 3}
+  m_Name: Vase-Left
+  m_EditorClassIdentifier: 
+  hand:
+    position: {x: -0.0000000060535967, y: 0.000000059604645, z: -0.00000010430813}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+  thumb:
+    position: {x: -0.0059000314, y: 0.03860016, z: 0.051999465}
+    rotation: {x: -0.5275394, y: 0.07320784, z: 0.8392642, w: 0.10944736}
+  index:
+    position: {x: -0.030000051, y: 0.03890015, z: 0.060099497}
+    rotation: {x: 0.04302975, y: -0.703998, z: 0.67027307, w: 0.23080185}
+  middle:
+    position: {x: -0.027600056, y: 0.008500144, z: 0.04879965}
+    rotation: {x: -0.017719354, y: -0.77264035, z: 0.6345249, w: 0.009561388}
+  ring:
+    position: {x: -0.022300085, y: -0.0177999, z: 0.0435995}
+    rotation: {x: 0.053291686, y: -0.8239931, z: 0.5615416, w: -0.053541142}
+  pinky:
+    position: {x: -0.02160008, y: -0.0459999, z: 0.039299622}
+    rotation: {x: 0.13168305, y: -0.8454071, z: 0.49802655, w: -0.14112473}
