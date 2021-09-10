@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 487fd41142fbdaa47a8af89b3b03f50a, type: 3}
+  m_Name: Wand - Left
+  m_EditorClassIdentifier: 
+  thumb:
+    position: {x: 0.028400011, y: 0.026000014, z: 0.015199922}
+    rotation: {x: -0.63919455, y: -0.34645402, z: 0.51204985, w: 0.45738932}
+  index:
+    position: {x: -0.0006999989, y: 0.00010000629, z: 0.06839992}
+    rotation: {x: -0.2123218, y: -0.6881603, z: 0.6924708, w: 0.042885516}
+  middle:
+    position: {x: -0.00090001686, y: -0.010200033, z: 0.058599927}
+    rotation: {x: 0.20433846, y: -0.88353515, z: 0.33236343, w: -0.2591257}
+  ring:
+    position: {x: 0.026699997, y: 0.012499989, z: 0.06869992}
+    rotation: {x: -0.065739684, y: -0.82309324, z: 0.3868276, w: -0.41056105}
+  pinky:
+    position: {x: 0.028399995, y: 0.0053999843, z: 0.05459992}
+    rotation: {x: -0.28820407, y: -0.80560035, z: 0.37009475, w: -0.36190683}
