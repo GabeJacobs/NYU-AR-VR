@@ -244,6 +244,14 @@ MonoBehaviour:
     m_Name: Wand Start
   wandEnd:
     m_Name: Wand End
+  wandActive:
+    m_Name: Wand Active
+  hasHit:
+    m_Name: Has Hit
+  hitPoint:
+    m_Name: Has Point
+  hitNormal:
+    m_Name: Hit Normal
   wand: {fileID: 1410777492}
   wandStartPosition: {fileID: 1550568090}
   wandEndPosition: {fileID: 279436116}

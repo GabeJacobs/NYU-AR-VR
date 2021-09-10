@@ -15586,12 +15586,108 @@ PrefabInstance:
     m_TransformParent: {fileID: 1512106370}
     m_Modifications:
     - target: {fileID: 945425109, guid: c14eaeb8fed83d1459bdd399c2726920, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 945425109, guid: c14eaeb8fed83d1459bdd399c2726920, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 945425109, guid: c14eaeb8fed83d1459bdd399c2726920, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 945425109, guid: c14eaeb8fed83d1459bdd399c2726920, type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 945425110, guid: c14eaeb8fed83d1459bdd399c2726920, type: 3}
+      propertyPath: m_PropertySheet.m_Bool.m_Array.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 945425110, guid: c14eaeb8fed83d1459bdd399c2726920, type: 3}
+      propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 945425110, guid: c14eaeb8fed83d1459bdd399c2726920, type: 3}
+      propertyPath: m_PropertySheet.m_Bool.m_Array.Array.data[0].m_Name
+      value: Has Hit
+      objectReference: {fileID: 0}
+    - target: {fileID: 945425110, guid: c14eaeb8fed83d1459bdd399c2726920, type: 3}
+      propertyPath: m_PropertySheet.m_Bool.m_Array.Array.data[1].m_Name
+      value: Wand Active
+      objectReference: {fileID: 0}
+    - target: {fileID: 945425110, guid: c14eaeb8fed83d1459bdd399c2726920, type: 3}
+      propertyPath: m_PropertySheet.m_Bool.m_Array.Array.data[0].m_Value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 945425110, guid: c14eaeb8fed83d1459bdd399c2726920, type: 3}
+      propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[2].m_Name
+      value: Hit Normal
+      objectReference: {fileID: 0}
+    - target: {fileID: 945425110, guid: c14eaeb8fed83d1459bdd399c2726920, type: 3}
+      propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[3].m_Name
+      value: Hit Point
+      objectReference: {fileID: 0}
+    - target: {fileID: 945425110, guid: c14eaeb8fed83d1459bdd399c2726920, type: 3}
+      propertyPath: m_PropertySheet.m_Bool.m_Array.Array.data[0].m_Overridden
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 945425110, guid: c14eaeb8fed83d1459bdd399c2726920, type: 3}
+      propertyPath: m_PropertySheet.m_Bool.m_Array.Array.data[1].m_Overridden
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 945425110, guid: c14eaeb8fed83d1459bdd399c2726920, type: 3}
+      propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[0].m_Value.y
+      value: -0.00000008940697
+      objectReference: {fileID: 0}
+    - target: {fileID: 945425110, guid: c14eaeb8fed83d1459bdd399c2726920, type: 3}
+      propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[0].m_Value.z
+      value: -0.053599894
+      objectReference: {fileID: 0}
+    - target: {fileID: 945425110, guid: c14eaeb8fed83d1459bdd399c2726920, type: 3}
+      propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[1].m_Value.y
+      value: -0.00000008940697
+      objectReference: {fileID: 0}
+    - target: {fileID: 945425110, guid: c14eaeb8fed83d1459bdd399c2726920, type: 3}
+      propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[1].m_Value.z
+      value: 0.15200013
+      objectReference: {fileID: 0}
+    - target: {fileID: 945425110, guid: c14eaeb8fed83d1459bdd399c2726920, type: 3}
+      propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[2].m_Value.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 945425110, guid: c14eaeb8fed83d1459bdd399c2726920, type: 3}
+      propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[2].m_Value.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 945425110, guid: c14eaeb8fed83d1459bdd399c2726920, type: 3}
+      propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[3].m_Value.z
+      value: 0.18
+      objectReference: {fileID: 0}
+    - target: {fileID: 945425110, guid: c14eaeb8fed83d1459bdd399c2726920, type: 3}
+      propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[2].m_Overridden
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 945425110, guid: c14eaeb8fed83d1459bdd399c2726920, type: 3}
+      propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[3].m_Overridden
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 945425111, guid: c14eaeb8fed83d1459bdd399c2726920, type: 3}
+      propertyPath: hitPoint.m_Name
+      value: Hit Point
       objectReference: {fileID: 0}
     - target: {fileID: 945425113, guid: c14eaeb8fed83d1459bdd399c2726920, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1144803652, guid: c14eaeb8fed83d1459bdd399c2726920, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1144803653, guid: c14eaeb8fed83d1459bdd399c2726920, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1144803654, guid: c14eaeb8fed83d1459bdd399c2726920, type: 3}
       propertyPath: m_InteractionManager
@@ -15601,6 +15697,14 @@ PrefabInstance:
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 1652521756}
+    - target: {fileID: 1153318453, guid: c14eaeb8fed83d1459bdd399c2726920, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1153318454, guid: c14eaeb8fed83d1459bdd399c2726920, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1410777492, guid: c14eaeb8fed83d1459bdd399c2726920, type: 3}
       propertyPath: m_Enabled
       value: 1
